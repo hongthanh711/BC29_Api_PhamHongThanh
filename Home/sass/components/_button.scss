@@ -1,0 +1,35 @@
+.btn-violet {
+  background-color: $color-primary;
+  border-radius: 30px;
+  border: 2px solid $color-primary;
+  transition: all 0.5s;
+  color: #fff !important;
+  text-transform: uppercase;
+  &:hover {
+    background-color: #fff;
+    a:hover {
+      color: $color-primary !important;
+    }
+  }
+}
+
+.btn-white {
+  background-color: #fff;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 25px;
+  border: 2px solid #fff;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  &:hover {
+    background-color: $color-primary;
+    text-decoration: none;
+    color: #fff;
+  }
+}

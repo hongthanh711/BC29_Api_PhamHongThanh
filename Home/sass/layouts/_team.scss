@@ -1,0 +1,27 @@
+.team {
+  background-color: #dcd1f3;
+  background-image: url(./../../images/Wave_White_bottom_right_shape_01.png);
+  @include background(bottom, contain);
+  .col-3 {
+    .card {
+      border-radius: 20px;
+      border: none;
+      overflow: hidden;
+      // box-shadow: 5px 10px #888888;
+      .card-info {
+        @include text($color-primary, 15px, 500);
+        text-transform: uppercase;
+      }
+      .card-title {
+        @include text(black, 22px, 700);
+      }
+      .card-img-top {
+        width: 100%;
+      }
+      .card-body {
+        text-align: center;
+      }
+    }
+    padding: 20px;
+  }
+}

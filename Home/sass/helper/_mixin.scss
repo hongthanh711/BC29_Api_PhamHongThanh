@@ -1,0 +1,17 @@
+@mixin background($position, $size) {
+  background-position: $position;
+  background-size: $size;
+  background-repeat: no-repeat;
+}
+
+@mixin text($color, $fs, $fw) {
+  color: $color;
+  font-size: $fs;
+  font-weight: $fw;
+}
+
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

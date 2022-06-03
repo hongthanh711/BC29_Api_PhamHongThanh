@@ -1,0 +1,39 @@
+.form {
+  background-image: url(./../../images/accent_bottom_wave_01.png);
+  @include background(bottom, contain);
+  .form__content {
+    background-color: #fff;
+    border-radius: 20px;
+    a.btn-violet {
+      padding: 10px 80px;
+      margin-top: 20px;
+      display: inline-block;
+      &::before {
+        content: "";
+      }
+    }
+    .form-input {
+      .form-control {
+        border-radius: 20px;
+        input {
+          border: none;
+          &:focus-visible {
+            outline: none;
+          }
+        }
+        select {
+          @extend input;
+          width: 100%;
+        }
+        textarea {
+          @extend select;
+        }
+      }
+    }
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+  }
+}

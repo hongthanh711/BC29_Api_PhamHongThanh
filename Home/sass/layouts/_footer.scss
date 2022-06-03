@@ -1,0 +1,77 @@
+footer {
+  padding: 100px 0 200px;
+  color: #fff;
+  background-image: url(./../../images/footer_background.jpg);
+  @include background(bottom, cover);
+  .title-footer {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  a {
+    text-transform: none;
+    color: white;
+  }
+
+  .contact {
+    li:not(.icon) > i {
+      width: 20px;
+    }
+
+    .icon {
+      margin-top: 15px;
+      i {
+        padding-right: 10px;
+        transition: all 0.5s;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+    li {
+      padding: 5px 0;
+    }
+  }
+
+  .quick-link {
+    ul {
+      li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        a {
+          transition: all 0.5s;
+          &:hover {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.6);
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    @extend .quick-link;
+  }
+
+  .letter {
+    .info {
+      margin-top: 50px;
+      input {
+        width: 100%;
+        background-color: transparent;
+        color: #fff;
+        border-radius: 30px;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        transition: all 0.5s;
+        &:focus-visible {
+          border: 1px solid #fff;
+          outline: none;
+        }
+      }
+    }
+  }
+}
